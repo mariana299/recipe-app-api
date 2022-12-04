@@ -23,11 +23,11 @@ services:
   db:
     image: postgres:13-alpine
     volumes:
-      - dev-db-data:/var/lib/postegresql/data
+      - dev-db-data:/var/lib/postgresql/data
     environment:
-      - POSTEGRES_DB=devdb
-      - POSTEGRES_USER=devuser
-      - POSTEGRES_PASSWORD=changeme
+      - POSTGRES_DB=devdb
+      - POSTGRES_USER=devuser
+      - POSTGRES_PASSWORD=changeme
     
 
 volumes:
